@@ -1,0 +1,79 @@
+Version 
+git --version 
+
+Global Configuration Commands  
+git config --global user.name "Pranav Deo"
+git config --global user.email "crazycoder84@gmail.com"
+git config --edit --global 
+git config --global core.editor "code --wait --new-window"
+git config --global -e
+git config --global core.autocrlf true
+
+Common Commands
+git init : Initialize a got local Repo 
+git clone git@github.com:GillCleeren/refactored-unbrella.git : Download a project from remote
+got add : Prepare a file for staging
+git add . : add all the uncommitted files to staging
+git add readme.md
+git commit : commit a change to local repository
+git commit -m : with specific message
+git commit -a : -a flag is for all files to be committed skipping the staging area. 
+git commit -m "some comment" : a new commit will be made to stage with the message 
+git status
+git status -s : Short Status 
+
+Risky commands
+git clean -fd : To remove all local changes
+
+Directory Commands
+mkdir "d:/code/pluralsight" : create a directory
+cd ""d:/code/pluralsight" : access the directory
+ls - la : list all contents of the directorys
+
+Opening VS Code 
+git code readme.md : create a file called readme.md in directory using default code editor 
+git diff --staged
+git difftool : Open VSCODE 
+git difftool --staged 
+
+Log
+git log : it will show log for all all committed files in local repo : Q to quite 
+git log --oneline --reverse 
+git show Head~1
+git ls-tree Head~1
+
+Accessing without HTTPS
+ssh 
+ls -al ~/.ssh 
+ssh-keygen -t ed25519 -C "crazycoder84@gmail.com"
+eval $(ssh-agent -s)
+ssh add ~/.ssh/id_ed25519 
+ssh -t git@github.com
+
+Fetch and Pull
+git fetch : gets the new stuff from the remote to local 
+git pull : gets changes from local to branch 
+
+branching 
+git branch 
+git checkout -b "add more isntructions"
+git status 
+git commit -am "committed something on new branch"
+git push -u origins add-more-instructions 
+
+Merge Tools 
+Kdiff3
+vimdiff3
+p4merge
+Beyond Compare 
+
+
+git log 
+git tag
+git push --tags 
+
+git reset --hard 
+
+
+
+
